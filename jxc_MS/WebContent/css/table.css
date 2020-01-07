@@ -1,0 +1,16 @@
+table .tr:nth-of-type(odd) {
+	background-color: #CCEED0;
+}
+
+table .tr:nth-of-type(even) {
+	background-color: #FBFFE9;
+}
+
+table tr:nth-of-type(2) td {
+	font:bold 15px 'ËÎÌו';
+	color: black;
+}
+
+.tr:hover {
+	background-color: #BDD5E1;
+}

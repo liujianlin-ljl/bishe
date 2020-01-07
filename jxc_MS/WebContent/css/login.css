@@ -1,0 +1,92 @@
+body {
+/* 	background-image: url(../img/tcbg.gif); */ 
+/* 	background-size: 100%; */
+padding:0px;
+margin:0px;
+}
+
+#login_div {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 25%;
+	top: 70px;
+	background: url(../img/bg3.png);
+	background-position: center center;
+	background-size: 150%;
+	border-radius: 30px;
+	box-shadow: 1px 2px 5px 5px dimgrey;
+}
+
+#box {
+	position: relative;
+	left: 12%;
+	top: 136px;
+}
+
+.title {
+	color: white;
+	font-family: "¿¬Ìå";
+}
+
+#login_div select {
+	width: 190px;
+	height: 25px;
+	text-align: center;
+	background: url(../img/right_12.gif);
+	border-radius: 10px;
+}
+
+.log {
+	text-align: right;
+	width: 150px;
+}
+
+.login_btn {
+	width: 48px;
+	height: 25px;
+	margin-left: 110px;
+	margin-right: 20px;
+	margin-top: 5px;
+	background-image: url(../img/dl.gif);
+	background-size: 100%;
+	border-radius: 5px;
+}
+
+.login_input {
+	width: 190px;
+	height: 22px;
+	background: url(../img/btnbg4.png);
+	border-radius: 10px;
+}
+
+.login_input:hover {
+	border: 2px solid orange;
+}
+
+.reset_btn {
+	width: 48px;
+	height: 25px;
+	color: white;
+	margin-top: 5px;
+	background-color: #616365;
+	border-radius: 5px;
+/* 	position: relative; */
+/* 	top: -6px; */
+}
+
+label {
+	margin-left: 55px;
+	font: bold 18px "¿¬Ìå";
+}
+
+span {
+	font-size: 18px;
+	color: red;
+}
+
+img {
+	position: relative;
+	bottom: 45px;
+	right: -160px;
+}

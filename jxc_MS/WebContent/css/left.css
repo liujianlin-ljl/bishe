@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html,
+body {
+	width: 230px;	
+	/* border: 1px solid red; */
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #262626;
+}
+
+.i-icon {
+	display: inline-block;
+}
+
+.go-back {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.window-left.fold {
+	overflow: visible !important;
+}
+
+.window-left {
+	position: relative;
+	float: left;
+	width: 220px;
+	height: 100%;
+	overflow: hidden;
+	background-color: #e8e9ec;
+}
+
+.window-left.fold {
+	overflow: visible !important;
+}
+
+.window-left .menu_title {
+	font: bold 18px "ËÎÌו";
+	color: black;
+	display: inline-block;
+	width: 60px;
+	border-radius: 10px;
+	background-image: url(../img/wbg.gif);
+}
+
+.window-left .go-back a {
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 15px;
+	border: solid 1px #7e84b1;
+	text-align: center;
+	background: url(../img/main_21.gif) no-repeat;
+	background-position: -5px -5px;
+}
+
+.window-left .go-back a .i-icon {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.window-left.fold .go-back a {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	border: solid 1px #7e84b1;
+}
+
+.window-left.fold .go-back a .i-icon {
+	background-image: url(img/base.gif);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.window-left .go-back {
+	text-align: center;
+}
+
+.window-left .menu-list {
+	padding-top: 0px;
+	font-size: 18px;
+}
+
+.window-left .menu-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.window-left .menu-list ul li {
+	text-align: left;
+	color: #616c82;
+}
+
+.window-left .menu-list ul li.first-menu {
+	position: relative;
+	color:black;
+	margin: 5px 0px;
+	padding:5px 0px;
+	line-height:35px;
+	border:1px solid #CCEED0;
+	border-radius: 5px;
+	background-color:#74C38C;
+	box-shadow: 2px 2px 2px 2px;
+}
+
+.window-left .menu-list>ul>li .i-icon {
+	width: 24px;
+	height: 24px;
+	vertical-align: sub;
+	background-image: url(../img/left_1.gif);
+}
+
+.window-left .menu-list ul li:HOVER>span {
+	color: white;
+	cursor: pointer;
+}
+
+.window-left .menu-list ul li a {
+	display: block;
+}
+
+.window-left .menu-list ul li.first-menu>a {
+	position: relative;
+	padding-left: 15px;
+	width: 100%;
+	line-height: 50px;
+	white-space: nowrap;
+}
+
+.window-left .menu-list ul li.first-menu .hover-tit {
+	display: block;
+	position: absolute;
+	left: 55px;
+	top: 0px;
+	width: 140px;
+}
+
+.window-left.fold .menu-list ul li.first-menu .hover-tit {
+	display: none;
+	width: 180px;
+	height: 50px;
+	left: 60px;
+	line-height: 50px;
+	padding-left: 20px;
+	background-color: #bfbcbc;
+	color: #646567;
+	cursor: Default;
+}
+
+.window-left.fold .menu-list ul li.first-menu:hover {
+	background-color: #bfbcbc;
+}
+
+.window-left.fold .menu-list ul li.first-menu:hover .hover-tit {
+	display: block !important;
+	top: 0;
+}
+
+.window-left.fold .menu-list ul li.first-menu:hover ul {
+	display: block !important;
+	position: absolute;
+	width: 180px;
+	top: 50px;
+	left: 60px;
+}
+
+.window-left.fold .menu-list ul li.first-menu:hover ul li {
+	height: 45px;
+	border-top: 1px solid #35395f;
+	background-color: #bfbcbc;
+}
+
+.window-left.fold .menu-list ul li.first-menu:hover ul li a {
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.window-left .menu-list ul li.first-menu.active>span {
+	color: #1c9dff;
+}
+
+.window-left .menu-list ul li.first-menu.active ul li.second-menu.current a {
+	background-color: #bfbcbc;
+	border-left: 4px solid #101213;
+	font-size: 16px;
+}
+
+.window-left .menu-list ul li.first-menu ul {
+	padding-left: 30px;
+	display: none;
+}
+
+.window-left .menu-list ul li.first-menu ul li.second-menu a {
+	padding: 5px 0 10px 50px;
+	font-size: 16px;
+	color: #28292b;
+	background: url(../img/joinbottom.gif) no-repeat;
+	background-position: 25px 16px;
+}
+
+.window-left.fold .menu-list ul li.first-menu ul li.second-menu a {
+	padding-left: 20px;
+	font-size: 16px;
+	color: #020e23;
+}

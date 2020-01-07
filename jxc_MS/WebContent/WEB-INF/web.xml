@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 初始化系统参数Servlet -->
+  <servlet>
+  	<servlet-name>initSys</servlet-name>
+  	<servlet-class>com.action.InitSystemParam_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>initSys</servlet-name>
+  	<url-pattern>/init</url-pattern>
+  </servlet-mapping>
+   <!-- admin Servlet -->
+  <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>com.action.admin_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+   <!-- 客户Servlet -->
+  <servlet>
+  	<servlet-name>customer</servlet-name>
+  	<servlet-class>com.action.customer_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>customer</servlet-name>
+  	<url-pattern>/customer</url-pattern>
+  </servlet-mapping>
+   <!-- 仓库Servlet -->
+  <servlet>
+  	<servlet-name>cangku</servlet-name>
+  	<servlet-class>com.action.cangku_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cangku</servlet-name>
+  	<url-pattern>/cangku</url-pattern>
+  </servlet-mapping>
+   <!-- 分类Servlet -->
+  <servlet>
+    <servlet-name>catelog</servlet-name>
+    <servlet-class>com.action.catelog_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>catelog</servlet-name>
+    <url-pattern>/catelog</url-pattern>
+  </servlet-mapping>
+   <!-- 商品Servlet -->
+  <servlet>
+    <servlet-name>goods</servlet-name>
+    <servlet-class>com.action.goods_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>goods</servlet-name>
+    <url-pattern>/goods</url-pattern>
+  </servlet-mapping>
+   <!-- 员工Servlet -->
+  <servlet>
+    <servlet-name>yuangong</servlet-name>
+    <servlet-class>com.action.yuangong_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>yuangong</servlet-name>
+    <url-pattern>/yuangong</url-pattern>
+  </servlet-mapping>
+   <!-- 入库Servlet -->
+  <servlet>
+    <servlet-name>ruku</servlet-name>
+    <servlet-class>com.action.ruku_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ruku</servlet-name>
+    <url-pattern>/ruku</url-pattern>
+  </servlet-mapping>
+   <!-- 出库Servlet -->
+  <servlet>
+    <servlet-name>chuku</servlet-name>
+    <servlet-class>com.action.chuku_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>chuku</servlet-name>
+    <url-pattern>/chuku</url-pattern>
+  </servlet-mapping>
+   <!-- 库存Servlet -->
+  <servlet>
+    <servlet-name>kucun</servlet-name>
+    <servlet-class>com.action.kucun_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>kucun</servlet-name>
+    <url-pattern>/kucun</url-pattern>
+  </servlet-mapping>
+   <!-- 查询统计Servlet -->
+  <servlet>
+	  <servlet-name>selectTongji</servlet-name>
+	  <servlet-class>com.action.selectTongji</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>selectTongji</servlet-name>
+  	<url-pattern>/selectTongji</url-pattern>
+  </servlet-mapping>
+   <!-- 盘存Servlet -->
+  <servlet>
+    <servlet-name>pancun</servlet-name>
+    <servlet-class>com.action.pancun_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pancun</servlet-name>
+    <url-pattern>/pancun</url-pattern>
+  </servlet-mapping>
+   <!--供应商Servlet -->
+  <servlet>
+    <servlet-name>gongyingshang</servlet-name>
+    <servlet-class>com.action.gongyingshang_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gongyingshang</servlet-name>
+    <url-pattern>/gongyingshang</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>dwr-invoker</servlet-name>
+    <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>activeReverseAjaxEnabled</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>initApplicationScopeCreatorsAtStartup</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>maxWaitAfterWrite</param-name>
+      <param-value>500</param-value>
+    </init-param>
+    <init-param>
+      <param-name>crossDomainSessionSecurity</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dwr-invoker</servlet-name>
+    <url-pattern>/dwr/*</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>SetChartEncoding</filter-name>
+    <filter-class>com.util.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>SetChartEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>

@@ -1,0 +1,39 @@
+input[type="text"] {
+	width: 220px;
+	height: 22px;
+	line-height: 22px;
+	background-color: #F1F8B4;
+}
+
+input[type="password"] {
+	width: 220px;
+	height: 22px;
+	line-height: 22px;
+	background-color: #F1F8B4;
+}
+
+input[class="btn"]{
+	width: 70px;
+	height: 22px;
+	font: bold 15px "¿¬Ìå";
+	background-color: #CCEED0;
+}
+
+input[class="back"] {
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	background: url(../img/syb.gif);
+}
+
+table tr:nth-of-type(2) {
+	heigth: 50px;
+}
+
+table tr:first-child td span,.title {
+	font: bold 24px "¿¬Ìå";
+}
+table tr td:first-child {
+	font-size: 20px;
+}
